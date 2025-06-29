@@ -8,10 +8,10 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
+# Create database if it doesn't exist
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
-mycursor.execute("CREATE TABLE IF NOT EXISTS alx_book_store")
-
-print("Table created successfully!")
+print("Database 'alx_book_store' created successfully!")
 
 mycursor.close()
 mydb.close()
