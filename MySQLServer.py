@@ -9,7 +9,7 @@ mydb = mysql.connector.connect(
 mycursor = mydb.cursor()
 
 
-mycursor.execute("""CREATE TABLE IF NOT EXISTS alx_book_store""")
+mycursor.execute("CREATE TABLE IF NOT EXISTS alx_book_store")
 
 print("Table created successfully!")
 
